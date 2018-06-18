@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blog</title>
+    <link rel="icon" href="images/logo.png" type="image/gif" sizes="16x16">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="myw.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+  
+</head>
+<body  onload="startTime();">
+<div class="se-pre-con"></div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<header id="main1">
+  <div class="main1">
+    <h1><span class="spanmain">M Y  B L O G S</span></h1>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+<div id="txt"></div>
+</header>
+
+
+<div class="work1" style="height:1200px; width: 100%;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<h1><span class="spanmain1">BLOG</span></h1>
+<div class="container">
+  <form onsubmit=" return make_json(this);" class="myForm" id="myd">
+    <div class="row">
+      <div class="col-25">
+        <label for="blogname">Blog Title</label>
+      </div>
+      <div class="col-blname">
+        <input type="text" id="blogname" name="blname" placeholder="Your blog name.." required="required" pattern="[A-Za-z\s]{6,20}">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Image of your blog</label>
+      </div>
+      <div class="col-url">
+         <input type="url" title="url" placeholder="Image url" pattern="(http(s?):)[^'\x22\s]*([/|.|-])*\.(?:jpg|gif|png|jpeg|svg)" required="required">
+      </div>
+    </div>
+    <div class="row">                                 
+      <div class="col-25">
+        <label for="para1">Introduction</label>
+      </div>
+      
+      <div class="col-75"> 
+        <textarea id="para1" name="para1" placeholder="Start with a good Introduction.." style="height:100px" required="required" minlength="10" contenteditable></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="para2">Content</label>
+      </div>
+      <div class="col-75">
+        <textarea id="para2" name="para2" placeholder="Write here.." style="height:200px" required="required" minlength="30" contenteditable=""></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="para3">Conclusion</label>
+      </div>
+      <div class="col-75">
+        <textarea id="para3" name="para3"  style="height:100px" required="required" minlength="20" contenteditable="" placeholder="Conclusion.."></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="blogname">Author name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Author" name="Author" placeholder="Author name" required="required" pattern="[A-Za-z\s]{5,20}">
+      </div>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="row">
+
+      <input type="submit" value="Submit" >
+    </div>
+  </form>
+</div>
+
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<pre class="output" id="output">
+  this is output
+</pre>
+
+</body>
+<footer class="footer">
+  
+  <h2 style ="text-align:center;">All Rights reserved</h2>
+</footer>
+
+</html>
+<script src="js/myw.js"></script>
